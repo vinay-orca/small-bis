@@ -2,7 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import MoreService from "../components/moreService.astro";
 import AboutDesc from "../components/about.astro";
-
+import { pwKinesisCreds } from "../lib/utils";
+// @ts-expect-error
+window.pwKinesisCreds = pwKinesisCreds;
 //adjust these variable to change your content
 const title = "About";
 const introText = "Doing Business in your area for over 10 years";

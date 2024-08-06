@@ -1,10 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Form from "../components/form.astro";
+import { pwKinesisCreds } from "../lib/utils";
+// @ts-expect-error
+window.pwKinesisCreds = pwKinesisCreds;
 
 //adjust these variable to change your content
 const title = "Contact";
-
 ---
 
 <Layout title="Company Name | Contact Us">
